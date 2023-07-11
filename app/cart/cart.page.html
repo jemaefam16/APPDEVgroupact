@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title color="dark">Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">cart</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card color="light">
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>  
+          <ion-button (click)="onHomeClick()" color="warning">Home
+          <ion-icon slot="start" name="home"></ion-icon>
+          </ion-button>
+       </ion-col>
+
+        <ion-col>  
+          <ion-button (click)="onGiftsClick()" color="warning">Gifts
+           <ion-icon slot="start" name="basket"></ion-icon>
+          </ion-button>
+       </ion-col>
+
+        <ion-col>  
+          <ion-button (click)="onCartClick()" color="warning">Cart
+            <ion-icon slot="start" name="cart"></ion-icon>
+          </ion-button> 
+        </ion-col>
+
+        <ion-col>
+          <ion-button color="danger" (click)="onLogoutClick()">LOGOUT
+            <ion-icon slot="end" name="bag-check"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+  <ion-card>
+    <ion-list>
+      <ion-item>
+        <ion-checkbox justify="start">Lambanog Large: 500</ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox justify="start">Balisong Regular: 250</ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox justify="start">Tshirt Custom: 350</ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox justify="start">Kapeng Barako Premium: 450</ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+    <ion-radio-group value="end">
+      <ion-item>
+        <ion-radio value="end" justify="end">Total: 1,550</ion-radio>
+      </ion-item>
+    </ion-radio-group>
+    
+  </ion-card>
+  <ion-card>
+  <ion-list>
+    <ion-item color="primary">
+      <ion-select label="Payment" placeholder="Select">
+        <ion-select-option value="Cash on Delivery">Cash on Delivery</ion-select-option>
+        <ion-select-option value="Online payment">Online Payment</ion-select-option>
+      </ion-select>
+    </ion-item>
+    </ion-list>
+    <ion-button color="danger">Order<ion-icon slot="end" name="bag-check"></ion-icon></ion-button>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title text-center>
+      Sign in NZJN Store
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<ion-card>
+  <ion-card-header>
+  <img src="assets/storelogo.jpg" alt="store-logo">
+
+  <ion-card-title>NZJN Store</ion-card-title>
+
+</ion-card-header>
+
+<ion-card-content>
+  "Your one stop gift shop."
+</ion-card-content>
+
+<ion-card-content>
+<ion-list>
+  <ion-item>
+    <ion-input label="USERNAME:" placeholder="Username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="PASSWORD:" placeholder="Password" type="Password"></ion-input>
+  </ion-item>
+</ion-list>
+
+<ion-button (click)="logMeIn()">LOGIN</ion-button>
+</ion-card-content>
+
+</ion-card>
+</ion-content>
+

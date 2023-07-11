@@ -1,0 +1,99 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar color="success">
+    <ion-title color="dark">
+      NZJN Store 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+<ion-card color="primary">
+  <ion-card-header>
+  <img src="assets/storelogo.jpg" alt="store-logo"height="160" weight="50">
+  </ion-card-header>
+</ion-card>
+
+  <ion-card-content>
+      <ion-title align-items-center justify-content-center>"Your one stop gift shop."</ion-title>
+</ion-card-content>
+
+<ion-card color="light">
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>  
+          <ion-button (click)="onHomeClick()" color="warning">Home
+          <ion-icon slot="start" name="home"></ion-icon>
+          </ion-button>
+       </ion-col>
+
+        <ion-col>  
+          <ion-button (click)="onGiftsClick()" color="warning">Gifts
+           <ion-icon slot="start" name="basket"></ion-icon>
+          </ion-button>
+       </ion-col>
+
+        <ion-col>  
+          <ion-button (click)="onCartClick()" color="warning">Cart
+            <ion-icon slot="start" name="cart"></ion-icon>
+          </ion-button> 
+        </ion-col>
+
+        <ion-col>
+          <ion-button color="danger" (click)="onLogoutClick()">LOGOUT
+            <ion-icon slot="end" name="bag-check"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+
+<ion-searchbar></ion-searchbar>
+
+
+<ion-card color="light" >
+   <p>
+    <ion-icon name="information-circle" aria-hidden="true" color="danger"></ion-icon>
+    <ion-label color="primary">  About Us: </ion-label> 
+     <ion-text> This gift shop is a store primarily selling souvenirs for 
+    your love ones. Gifts here are high quality that are originated from Batangas.</ion-text>
+  </p>
+</ion-card>
+<ion-card color="dark">
+  <ion-grid color="warning">
+    <ion-row>
+      <ion-col> <img src="assets/zandro.jpg" alt="zandro-logo"> <ion-label>Owner, Zandro Lance De Chavez</ion-label></ion-col>
+      <ion-col><img src="assets/nina.jpg" alt="nina-logo"><ion-label>Co-owner, Niña Marie Din</ion-label></ion-col>
+      <ion-col><img src="assets/nica.jpg" alt="nica-logo"><ion-label>Co-owner, Nica Rivarez</ion-label></ion-col>
+      <ion-col><img src="assets/jessa.jpg" alt="jessa-logo"><ion-label>Co-owner, Jessa Mae Famorcan</ion-label></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card>
+  <ion-footer [translucent]="true">
+    <ion-toolbar color="success">
+      <ion-grid>
+        <ion-row>
+          <ion-col> <ion-icon name="logo-facebook" aria-hidden="true" color="dark"></ion-icon>
+           <ion-label color="dark">  Facebook</ion-label> 
+          </ion-col>
+          <ion-col> <ion-icon name="mail" aria-hidden="true" color="dark"></ion-icon>
+            <ion-label color="dark">  Gmail</ion-label> 
+           </ion-col>
+           <ion-col> <ion-icon name="bag-handle" aria-hidden="true" color="dark"></ion-icon>
+            <ion-label color="dark">  Shopee</ion-label> 
+           </ion-col>
+           <ion-col> <ion-icon name="call" aria-hidden="true" color="dark"></ion-icon>
+            <ion-label color="dark"> 09202924472</ion-label> 
+           </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
+</ion-card>
+

@@ -1,0 +1,154 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title color="dark">Gifts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">gifts</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card color="light">
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>  
+          <ion-button (click)="onHomeClick()" color="warning">Home
+          <ion-icon slot="start" name="home"></ion-icon>
+          </ion-button>
+       </ion-col>
+
+        <ion-col>  
+          <ion-button (click)="onGiftsClick()" color="warning">Gifts
+           <ion-icon slot="start" name="basket"></ion-icon>
+          </ion-button>
+       </ion-col>
+
+        <ion-col>  
+          <ion-button (click)="onCartClick()" color="warning">Cart
+            <ion-icon slot="start" name="cart"></ion-icon>
+          </ion-button> 
+        </ion-col>
+
+        <ion-col>
+          <ion-button color="danger" (click)="onLogoutClick()">LOGOUT
+            <ion-icon slot="end" name="bag-check"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+  <ion-searchbar></ion-searchbar>
+
+  <ion-card>
+    <ion-list>
+      <ion-grid color="warning">
+        <ion-row>
+          <ion-col> <img src="assets/lambanog.jfif" alt="small-logo" height="74%"> <ion-label>Small</ion-label></ion-col>
+          <ion-col><img src="assets/lambanog2.jfif" alt="medium-logo" height="74%"><ion-label>Medium</ion-label></ion-col>
+          <ion-col><img src="assets/lambanog3.jfif" alt="large-logo" height="74%"><ion-label>Large</ion-label></ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      <ion-item color="danger">
+        <ion-select label="Lambanog Prizes" placeholder="Select">
+          <ion-select-option value="Small">Small: 150</ion-select-option>
+          <ion-select-option value="Medium">Medium: 300</ion-select-option>
+          <ion-select-option value="Large">Large: 500</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button shape="round" >Add to Cart</ion-button>
+      </ion-list>
+  </ion-card>
+ 
+  <ion-card>
+    <ion-list>
+      <ion-grid color="warning">
+        <ion-row>
+          <ion-col> <img src="assets/kape.jfif" alt="regular-logo" height="74%"> <ion-label>Regular</ion-label></ion-col>
+          <ion-col><img src="assets/kape1.jfif" alt="special-logo" height="74%"><ion-label>Special</ion-label></ion-col>
+          <ion-col><img src="assets/kape2.jfif" alt="premium-logo" height="74%"><ion-label>Premium</ion-label></ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      <ion-item color="danger">
+        <ion-select label="Kapeng Barako Prizes" placeholder="Select">
+          <ion-select-option value="Regular">Regular: 100</ion-select-option>
+          <ion-select-option value="Special">Special: 250</ion-select-option>
+          <ion-select-option value="Premium">Premium: 450</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button shape="round" >Add to Cart</ion-button>
+      </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-list>
+      <ion-grid color="warning">
+        <ion-row>
+          <ion-col> <img src="assets/keychain.jfif" alt="small-logo" height="74%"> <ion-label>Small</ion-label></ion-col>
+          <ion-col><img src="assets/keychain2.jfif" alt="medium-logo" height="74%"><ion-label>Medium</ion-label></ion-col>
+          <ion-col><img src="assets/keychain1.jfif" alt="large-logo" height="74%"><ion-label>Large</ion-label></ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      <ion-item color="danger">
+        <ion-select label="Keychains Prizes" placeholder="Select">
+          <ion-select-option value="Small">Small: 50</ion-select-option>
+          <ion-select-option value="Medium">Medium:100</ion-select-option>
+          <ion-select-option value="Large">Large:200</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button shape="round" >Add to Cart</ion-button>
+      </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-list>
+      <ion-grid color="warning">
+        <ion-row>
+          <ion-col> <img src="assets/balisong.jfif" alt="regular-logo" height="74%"> <ion-label></ion-label>Regular</ion-col>
+          <ion-col><img src="assets/balisong1.jfif" alt="special-logo" height="74%"><ion-label>Special</ion-label></ion-col>
+          <ion-col><img src="assets/balisong2.jpg" alt="popular-logo" height="74%"><ion-label>Popular</ion-label></ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      <ion-item color="danger">
+        <ion-select label="Balisong Prizes" placeholder="Select">
+          <ion-select-option value="Regular">Regular: 250</ion-select-option>
+          <ion-select-option value="Special">Special: 450</ion-select-option>
+          <ion-select-option value="Popular">Popular: 600</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button shape="round" >Add to Cart</ion-button>
+      </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-list>
+      <ion-grid color="warning">
+        <ion-row>
+          <ion-col> <img src="assets/tshirt.jfif" alt="simple-logo" height="74%"> <ion-label></ion-label>Simple</ion-col>
+          <ion-col><img src="assets/tshirt1.jfif" alt="custom-logo" height="74%"><ion-label>Custom</ion-label></ion-col>
+          <ion-col><img src="assets/tshirt2.jfif" alt="special-logo" height="74%"><ion-label>Special</ion-label></ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      <ion-item color="danger">
+        <ion-select label="Tshirts Prizes" placeholder="Select">
+          <ion-select-option value="Simple">Simple: 200</ion-select-option>
+          <ion-select-option value="Custom">Custom: 350</ion-select-option>
+          <ion-select-option value="Special">Special: 550</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button shape="round" >Add to Cart</ion-button>
+      </ion-list>
+  </ion-card>
+
+
+</ion-content>
